@@ -1,0 +1,12 @@
+body {
+    background-color: var(--backgroundcolor-primary);
+    color: var(--primary-text-color);
+    font-family: var(--font-family-primary);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: var(--primary-line-height);
+}
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}

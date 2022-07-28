@@ -1,0 +1,102 @@
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    &__items {
+        position: relative;
+        width: 368px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        border: 1px solid;
+        border-color: #ececec;
+        transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__items:nth-child(3n) {
+        margin-right: 0;
+    
+    }
+    &__items:nth-last-child(-n+3) {
+        margin-bottom: 0;
+    }
+    &__items:hover,
+    &__items:active,
+    &__items:focus {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+&__items:hover .thumb-example__overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+}
+
+
+.thumb-example {
+    position: relative;
+    overflow: hidden;
+}
+.thumb-example__overlay {
+    position: absolute;
+    background-color: rgba(33, 150, 243, 0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px;
+    opacity: 0;
+    z-index: 1;
+    transform: translateY(100%);
+    transition-property: transform, opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.thumb-example__text{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    font-family: var(--font-family-primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: var(--accent-text-color);
+}
+
+.description {
+    padding: 20px 24px;
+    
+    &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin: 0 0 4px;
+    
+    }
+    &__text {
+        margin: 0;
+        color: #757575;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.03em;
+    }
+}

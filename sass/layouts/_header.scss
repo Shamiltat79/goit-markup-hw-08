@@ -1,0 +1,53 @@
+.page-header {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header-contacts {
+    display: inline;
+    margin-left: auto;
+
+&__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family-primary);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: var(--primary-line-height);
+    color: #757575;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__link:not(last-child) {
+margin-right: 30px;
+}
+
+&__link:hover,
+&__link:active,
+&__link:focus {
+    color: var(--color-accent);
+    outline: none;
+}
+
+&__icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: #757575;
+}
+
+&__link:hover &__icon,
+&__link:focus &__icon,
+&__link:active &__icon {
+    fill: var(--color-accent);
+}
+}
+.portfolio {
+    border-bottom: 1px solid #ececec;
+}

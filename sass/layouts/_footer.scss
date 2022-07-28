@@ -1,0 +1,93 @@
+
+.footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+&__container {
+    display: flex;
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    background-color: #2f303a;
+}
+&__adress {
+ display: block; 
+ width: 231px; 
+ margin-right: 70px;
+}
+
+&__text{
+    display: block;
+    margin-top: 20px;
+    font-family: var(--font-family-primary);
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 00.03em;
+   line-height: 1.71;
+   color: var(--accent-text-color);     
+}
+&__mail,
+&__tel {
+   display: block; 
+    margin-top: 9px;
+    margin-bottom: 9px;
+    font-family: var(--font-family-primary);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: var(--primary-line-height);
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__tel {
+    margin: 0;
+}
+&__mail:hover,
+&__mail:active,
+&__mail:focus {
+    color: var(--color-accent)
+}
+
+ &__tel:hover,
+ &__tel:active,
+ &__tel:focus {
+    color: var(--color-accent)
+}
+&__invitation {
+    margin-right: 93px;
+    padding-top: 14px;
+}
+&__title {
+    font-family: var(--font-family-primary);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: var(--primary-line-height);
+    letter-spacing: 0.03em;
+    color: var(--accent-text-color);
+    text-align: start;
+    margin-bottom: 0;
+}
+&__input {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+&__label {
+    margin-bottom: 20px;
+    font-family: var(--font-family-primary);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: var(--primary-line-height);
+    letter-spacing: 0.03em;
+    color: var(--accent-text-color);
+    text-align: start;
+}
+}
+.cta-form {
+padding-top: 14px;
+}
