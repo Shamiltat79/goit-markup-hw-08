@@ -2,31 +2,51 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
+    @media (max-width: 1199px){
+      display: none;  
+    }
 }
 
 .benefits {
     display: block;
-    width: 1200px;
+   max-width: 480px;
     padding: 0 15px;
     margin: 0 auto;
+    @include for-tablet-up {
+        max-width: 768px; 
+     }
+     @include for-desktop-up {
+       max-width: 1200px;  
+     }
 }
 
-.features {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 94px;
+.features__item:not(:last-child) {
+ margin-bottom: 30px;
+}
+ .features {  
+display: block;
+@include for-tablet-up
+{display: flex;
+flex-wrap: wrap;  
+justify-content: space-between;  
+}
 
 &__item {
     display: block;
-    width: 270px;
+    max-width: 450px;
+ @include for-tablet-up {
+    max-width: 354px;
+ }   
+ @include for-desktop-up {
+    max-width: 270px;
+ } 
 }
 
 &__image {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
-   padding: 25px 0;
+    padding: 25px 0;
     background-color: var(--button-color);
     margin-bottom: 30px;
 }
@@ -57,11 +77,15 @@
 
 
 .servis {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin-bottom: 0;
-    list-style: none;
+display: none;
+    @include for-desktop-up {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin-bottom: 0;
+        list-style: none;   
+    }
+    
 
 
 &__item {

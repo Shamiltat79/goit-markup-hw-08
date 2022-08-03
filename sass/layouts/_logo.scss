@@ -1,11 +1,17 @@
 .logo {
-    width: 145px;
+    display: block;
+    // margin: 0 auto;
+    width: 134px;
     font-family: var(--font-family-logo);
     font-size: 26px;
     font-weight: 700;
     line-height: var(--primary-line-height);
     color: #000;
     text-decoration: none;
+    @include for-desktop-up {
+    width: 145px;
+    margin: 0;
+    }
 
 
 &__label {

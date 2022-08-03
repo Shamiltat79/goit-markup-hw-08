@@ -6,7 +6,7 @@
     width: 206px;
     height: 44px;
     margin: 0 auto;
-    margin-bottom: 30px;
+   
 }
 
 .social__link {
@@ -55,8 +55,13 @@
 
 
 .footer-social {
-margin-bottom: 0; 
+margin-left: auto; 
+margin-right: auto;    
+margin-bottom: 60px; 
 margin-top: 20px;
+@include for-desktop-up {
+    margin-bottom: 0;
+}
 }
 .social__link-footer {
     @extend.social__link;

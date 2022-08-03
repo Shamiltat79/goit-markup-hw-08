@@ -1,19 +1,21 @@
 /*normalize*/
-@import './base/base';
 @import './base/normalize';
 @import './base/variables';
-@import './components/benefits';
-@import './components/brands-section';
+@import './base/base';
+@import './utils/mixins';
+@import './utils/breakpoints';
+@import './layouts/header';
+@import './layouts/nav-menu';
+@import './layouts/logo';
 @import './components/hero';
+@import './ui/button';
+@import './components/benefits';
+@import './components/team';
+@import './components/brands-section';
 @import './components/portfolio';
 @import './components/social';
-@import './components/team';
 @import './layouts/footer';
-@import './layouts/header';
-@import './layouts/logo';
 @import './layouts/modal';
-@import './layouts/nav-menu';
-@import './ui/button';
 @import './ui/form';
 @import './utils/hidden';
 
