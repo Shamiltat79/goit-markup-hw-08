@@ -38,7 +38,10 @@
  margin: 0;   
 }
 &__social {
- display: block;
+ display: flex;
+ justify-content: space-between;
+ margin-left: 40px;
+ margin-right: 83px;
  @include for-tablet-up {
   display: none;  
  }   
@@ -48,11 +51,11 @@
 .header-contacts {
 display: flex; 
 flex-direction: column;
-margin: 0 auto;   
+justify-content: center; 
 
 @media screen and(min-width: 1200px) {
 flex-direction: row;
-margin-left: auto;
+justify-content: center;
 }
 
 &__link {
@@ -92,8 +95,6 @@ margin-right: 30px;
 
 &__icon {
     display: none;
-    width: 16px;
-    height: 12px;
     margin-right: 10px;
     fill: #757575;
     @media screen and (min-width: 768px) {
