@@ -57,7 +57,7 @@
   min-width: 768px;
   max-width: 100%;
   background-image: url('..//..//images/Headertab.jpg');
-  @media (min-width: 768px),
+  @media screen and (min-width: 768px),
    (min-device-pixel-ratio: 2),
    (-webkit-min-device-pixel-ratio: 2),
    (min-resolution: 2dppx),
@@ -71,7 +71,7 @@
     width: 1600px;
     height: 600px;
     background-image: url('../../images/Header.jpg');
-    @media (min-width: 1200px), 
+    @media screen and (min-width: 1200px), 
     (min-device-pixel-ratio: 2), 
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx), 
