@@ -77,10 +77,12 @@
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
-    min-width: 362px;
+    width: 100%;
     margin-bottom: 40px;
     @include for-tablet-up {
         margin-bottom: 30px;
+        flex-wrap: nowrap;
+        justify-content: center;
     }
     
     @include for-desktop-up {
@@ -98,7 +100,7 @@
 .menu-close {
 position: absolute;
 top: 0;   
-right: -8px; 
+right: 0px; 
 padding: 0;
 border: none;
 background-color: transparent;

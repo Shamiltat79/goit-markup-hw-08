@@ -28,9 +28,9 @@
 .modal {
     display: flex;
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;   
-    transform: translate(-50%, -45%);
+    transform: translate(-50%, 93px);
     z-index: 2;
     width: 100%;
     max-width: 450px;
@@ -41,17 +41,17 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 768px) {
-        top: 50%;
+        top: 0;
         left: 50%;   
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 208px);
     }
 
     @media screen and (min-width: 1200px) {
         max-width: 528px;
         height: 581px;   
-        top: 50%;
+        top: 0;
         left: 50%;
-        transform: translate(-50%, -50%) scale(1); 
+        transform: translate(-50%, 221px) scale(1); 
     }
 }
 
@@ -62,7 +62,7 @@
     width: 30px;
     height: 30px;
     top: 8px;
-    right: 8px;
+    right: 10px;
     border-radius: 50%;
     border-color: rgba(0, 0, 0, 0.1);
     background-color: var(--backgroundcolor-primary);
@@ -151,7 +151,7 @@
     cursor: pointer;
     @media screen and (min-width:1200px){
         font-size: 14px;
-    // margin-top: 20px;   
+       
     }
 }
 
@@ -256,7 +256,7 @@
  align-items: flex-start; 
  margin-bottom: 30px;
 @media screen and (max-width: 480px) { 
-    min-width: 320px;
+    width: 100%;
    
     
 }    

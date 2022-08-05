@@ -5,11 +5,11 @@
     margin: 0 auto;
     padding: 0 15px;
     @include for-tablet-up {
-        max-width: 768px; 
+    max-width: 768px; 
        
      }
      @include for-desktop-up {
-       max-width: 1200px;  
+    max-width: 1200px;  
      }
 
 &__title {
@@ -23,38 +23,53 @@
     letter-spacing: 0.03em;
     @include for-desktop-up {
      font-size: 36px;   
-     margin-bottom: 60px;
+     margin-bottom: 50px;
     }
 }
 
 &__list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+    
+    @include for-tablet-up {
+    width: 100%;    
+    }
    
     @include for-desktop-up{
-     flex-wrap: nowrap;   
+    
+     flex-wrap: nowrap; 
+    width: 100%; 
+     margin: 0;
     }
 }
-//  &__item:nth-last-child(-n+2) {
-//     margin-bottom: 0px;
-//  }
+@media screen  and (min-width: 1200px) {
+ &__item:nth-child(1) {
+ margin-left: 0px;
+}
+ 
+ }
 
 
 &__item {
 display: flex;
-margin-top: 30px;
-margin-left: 30px;
 
-flex-basis: calc(100% / 2 - 30px);
+flex-basis: calc((100% - 30px) / 2);
 max-width: 210px;
-@include for-tablet-up {
-flex-basis: calc(100% / 3 - 30px);  
 
-}
+@include for-tablet-up {
+width: 226px;
+flex-basis: calc((100% - 60px) / 3);
+
+    }
+
 @include for-desktop-up {
-  margin-bottom: 0;  
+  margin-bottom: 0;
+  width: 170px;
+
 }
 
 }
@@ -72,10 +87,10 @@ flex-basis: calc(100% / 3 - 30px);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @include for-tablet-up {
-        min-width: 226px;    
+        width: 100%;    
         } 
         @include for-desktop-up {
-        min-width: 170px;  
+        width: 100%;  
         }
 }
 

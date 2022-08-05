@@ -20,37 +20,86 @@
   <body>
     <header class="portfolio">
       <div class="page-header">
-        <a href="./index.html" class="logo page-header__logo">
-          <span class="logo__label">Web</span>Studio
-        </a>
-        <ul class="nav-list">
-          <li class="nav-list__item">
-            <a href="./index.html" class="nav-list__link link">Студия</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="./portfolio.html" class="nav-list__link link current">Портфолио</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link link">Контакты</a>
-          </li>
-        </ul>
-        <div class="header-contacts">
-          <a href="mailto:info@devstudio.com" class="header-contacts__link">
-            <svg class="header-contacts__icon" width="16" height="12" aria-hidden="true">
-              <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
-            >info@devstudio.com</a
+        <a href="/" class="page-header__logo logo"> <span class="logo__label">Web</span>Studio </a>
+        <button
+          type="button"
+          class="page-header__mobile-menu"
+          aria-expanded="false"
+          data-mobile-menu-open
+        >
+          <svg
+            class="page-header__icon"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
           >
-          <a href="tel:+380961111111" class="header-contacts__link">
-            <svg class="header-contacts__icon" width="16" height="12" aria-hidden="true">
-              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11</a
-          >
-        </div>
-        <div class="page-header__mobile">
-          <svg class="page-header__icon" width="40" height="40" aria-hidden="true">
-            <use href="./images/symbol-defs.svg#icon-evenodd"></use>
+            <use class="icon-open" href="./images/symbol-defs.svg#icon-evenodd"></use>
           </svg>
+        </button>
+        <div class="menu-container" data-mobile-menu>
+          <button type="button" class="menu-close" aria-expanded="false" data-mobile-menu-close>
+            <svg
+              class="page-header__icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon-close" href="./images/symbol-defs.svg#close-24"></use>
+            </svg>
+          </button>
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="./index.html" class="nav-list__link link">Студия</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./portfolio.html" class="nav-list__link link current">Портфолио</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link link">Контакты</a>
+            </li>
+          </ul>
+
+          <div class="header-contacts-mobile">
+            <a href="tel:+380961111111" class="header-contacts__link">
+              <svg class="header-contacts__icon" width="10" height="16" aria-hidden="true">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+            <a href="mailto:info@devstudio.com" class="header-contacts__link">
+              <svg class="header-contacts__icon" width="16" height="12" aria-hidden="true">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </div>
+          <div class="header-contacts">
+            <a href="mailto:info@devstudio.com" class="header-contacts__link">
+              <svg class="header-contacts__icon" width="16" height="12" aria-hidden="true">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+            <a href="tel:+380961111111" class="header-contacts__link">
+              <svg class="header-contacts__icon" width="10" height="16" aria-hidden="true">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </div>
+          <div class="page-header__social">
+            <a href="/" class="page-header__link">Instagram</a>
+            <svg class="line" height="22" width="1" aria-hidden="true">
+              <use href="./images/symbol-defs.svg#line"></use>
+            </svg>
+            <a href="/" class="page-header__link">Twitter</a>
+            <svg class="line" height="22" width="1" aria-hidden="true">
+              <use href="./images/symbol-defs.svg#line"></use>
+            </svg>
+            <a href="/" class="page-header__link">Facebook</a>
+            <svg class="line" height="22" width="1" aria-hidden="true">
+              <use href="./images/symbol-defs.svg#line"></use>
+            </svg>
+            <a href="/" class="page-header__link">LinkedIn</a>
+          </div>
         </div>
       </div>
     </header>
@@ -69,11 +118,22 @@
           <li class="grid__items">
             <div class="thumb-example">
               <picture>
-                <source srcset="./images/technocrackmob.jpg 1x, ./images/technocrackmob@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg">
-                <source srcset="./images/technocracktab.jpg 1x, ./images/technocracktab@2x.jpg 2x" media="(max-width: 1200px)" type="image/jpg">
-                <source srcset="./images/technocrack.jpg 1x, ./images/technocrack@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
-                <img src="./images/technocrack.jpg" alt="Комп'ютер із веб сторінкою" width="368" />
-                
+                <source
+                  srcset="./images/technocrackmob.jpg 1x, ./images/technocrackmob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/technocracktab.jpg 1x, ./images/technocracktab@2x.jpg 2x"
+                  media="(max-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/technocrack.jpg 1x, ./images/technocrack@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <img src="./images/technocrack.jpg" alt="Комп'ютер із веб сторінкою" />
               </picture>
               <div class="thumb-example__overlay">
                 <p class="thumb-example__text">
@@ -91,10 +151,22 @@
           <li class="grid__items">
             <div class="thumb-example">
               <picture>
-                <source srcset="./images/neworleanmob.jpg 1x, ./images/neworleanmob@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg">
-                <source srcset="./images/neworleantab.jpg 1x, ./images/neworleantab@2x.jpg 2x" media="(max-width: 1200px)" type="image/jpg">
-                <source srcset="./images/neworlean.jpg 1x, ./images/neworlean@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
-                <img src="./images/neworlean.jpg" alt="Постер з баскетболістами" width="368" />
+                <source
+                  srcset="./images/neworleanmob.jpg 1x, ./images/neworleanmob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/neworleantab.jpg 1x, ./images/neworleantab@2x.jpg 2x"
+                  media="(max-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/neworlean.jpg 1x, ./images/neworlean@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <img src="./images/neworlean.jpg" alt="Постер з баскетболістами" />
               </picture>
               <div class="thumb-example__overlay"></div>
             </div>
@@ -105,16 +177,27 @@
           </li>
           <li class="grid__items">
             <div class="thumb-example">
-              <pictupe>
-                <source srcset="./images/seafoodmob.jpg 1x, /images/seafoodmob@2x.jpg 2x " media="(max-width: 767px)" type="image/jpg">
-                <sourse srcset="./images/seafoodtab.jpg 1x, ./images/seafoodtab@2x.jpg 2x" media="(max-width: 1200px)" type="image/jpg">
-                <sourse srcset="./images/seafood.jpg 1x, ./images/seafood@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
+              <picture>
+                <source
+                  srcset="./images/seafoodmob.jpg 1x, /images/seafoodmob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/seafoodtab.jpg 1x, ./images/seafoodtab@2x.jpg 2x"
+                  media="(max-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/seafood.jpg 1x, ./images/seafood@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
                 <img
                   src="./images/seafood.jpg"
                   alt="Логотип та назва для ресторану морепродуктів"
-                  width="368"
                 />
-              </pictupe>
+              </picture>
               <div class="thumb-example__overlay"></div>
             </div>
             <div class="description">
@@ -125,10 +208,22 @@
           <li class="grid__items">
             <div class="thumb-example">
               <picture>
-              <source srcset="./images/primemob.jpg 1x, ./images/primemob@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg">
-              <source srcset="./images/primetab.jpg 1x, ./images/primetab@2x.jpg 2x" media="(max-width: 1200px)" type="image/jpg">
-              <source srcset="./images/prime.jpg 1x, ./images/prime@2x.jpg 2x"  media="(min-width: 1200px)" type="image/jpg">
-                <img src="./images/prime.jpg" alt="Навушники" width="368" />
+                <source
+                  srcset="./images/primemob.jpg 1x, ./images/primemob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/primetab.jpg 1x, ./images/primetab@2x.jpg 2x"
+                  media="(max-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/prime.jpg 1x, ./images/prime@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <img src="./images/prime.jpg" alt="Навушники" />
               </picture>
               <div class="thumb-example__overlay"></div>
             </div>
@@ -140,10 +235,22 @@
           <li class="grid__items">
             <div class="thumb-example">
               <picture>
-                <source srcset="./images/boxesmob.jpg 1x, ./images/boxesmob@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg">
-                <source srcset="./images/boxestab.jpg 1x, ./images/boxestab@2x.jpg 2x" media="(max-width: 1200px)" type="image/jpg">
-                <source srcset="./images/boxes.jpg 1x, ./images/boxes@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
-                <img src="./images/boxes.jpg" alt="Коробки" width="368" />
+                <source
+                  srcset="./images/boxesmob.jpg 1x, ./images/boxesmob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/boxestab.jpg 1x, ./images/boxestab@2x.jpg 2x"
+                  media="(max-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/boxes.jpg 1x, ./images/boxes@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <img src="./images/boxes.jpg" alt="Коробки" />
               </picture>
               <div class="thumb-example__overlay"></div>
             </div>
@@ -155,14 +262,22 @@
           <li class="grid__items">
             <div class="thumb-example">
               <picture>
-                <source srcset="./images/inspirationmob.jpg 1x, ./images/inspirationmob@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg">
-                <source srcset="./images/inspirationtab.jpg 1x, ./images/inspirationtab@2x.jpg 2x" media="(max-width: 1200px)" type="image/jpg">
-                <source srcset="./images/inspiration.jpg 1x, ./images/inspiration@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
-                <img
-                  src="./images/inspiration.jpg"
-                  alt="Монітор з зображенням мапи на екрані"
-                  width="368"
+                <source
+                  srcset="./images/inspirationmob.jpg 1x, ./images/inspirationmob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
                 />
+                <source
+                  srcset="./images/inspirationtab.jpg 1x, ./images/inspirationtab@2x.jpg 2x"
+                  media="(max-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/inspiration.jpg 1x, ./images/inspiration@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <img src="./images/inspiration.jpg" alt="Монітор з зображенням мапи на екрані" />
               </picture>
               <div class="thumb-example__overlay"></div>
             </div>
@@ -174,10 +289,22 @@
           <li class="grid__items">
             <div class="thumb-example">
               <picture>
-                <source srcset="./images/limitedmob.jpg 1x, ./images/limitedmob@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg">
-                <source srcset="./images/limitedtab.jpg 1x, ./images/limitedtab@2x.jpg 2x"media="(max-width: 1200px)" type="image/jpg">
-                <source srcset="./images/limited.jpg 1x, ./images/limited@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
-                <img src="./images/limited.jpg" alt="Глянцевий журнал" width="368" />
+                <source
+                  srcset="./images/limitedmob.jpg 1x, ./images/limitedmob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/limitedtab.jpg 1x, ./images/limitedtab@2x.jpg 2x"
+                  media="(max-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/limited.jpg 1x, ./images/limited@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <img src="./images/limited.jpg" alt="Глянцевий журнал" />
               </picture>
               <div class="thumb-example__overlay"></div>
             </div>
@@ -189,11 +316,22 @@
           <li class="grid__items">
             <div class="thumb-example">
               <picture>
-                
-                <source srcset="./images/labmob.jpg 1x, ./images/labmob@2x.jpg 2x"  media="(max-width: 767px)" type="image/jpg">
-                <source srcset="./images/labtab.jpg 1x, ./images/labtab@2x.jpg 2x"  media="(max-width: 1200px)" type="image/jpg">
-                <source srcset="./images/lab.jpg 1x, ./images/lab@2x.jpg 2x"  media="(min-width: 1200px)" type="image/jpg"> 
-                <img src="./images/lab.jpg" alt="Етикетка з написом LABEL TAG" width="368" />
+                <source
+                  srcset="./images/labmob.jpg 1x, ./images/labmob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/labtab.jpg 1x, ./images/labtab@2x.jpg 2x"
+                  media="(max-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/lab.jpg 1x, ./images/lab@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <img src="./images/lab.jpg" alt="Етикетка з написом LABEL TAG" />
               </picture>
               <div class="thumb-example__overlay"></div>
             </div>
@@ -205,13 +343,24 @@
           <li class="grid__items">
             <div class="thumb-example">
               <picture>
-                <source srcset="./images/growingbusinessmob.jpg 1x, ./images/growingbusinessmob@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg">
-                <source srcset="./images/growingbusinesstab.jpg 1x, ./images/growingbusinesstab@2x.jpg 2x" media="(max-width: 1200px)" type="image/jpg">
-                <source srcset="./images/growingbusiness.jpg 1x, ./images/growingbusiness@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
+                <source
+                  srcset="./images/growingbusinessmob.jpg 1x, ./images/growingbusinessmob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/growingbusinesstab.jpg 1x, ./images/growingbusinesstab@2x.jpg 2x"
+                  media="(max-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/growingbusiness.jpg 1x, ./images/growingbusiness@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
                 <img
                   src="./images/growingbusiness.jpg"
                   alt="Руки людини, яка працює на комп'ютері"
-                  width="368"
                 />
               </picture>
               <div class="thumb-example__overlay"></div>
@@ -288,5 +437,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
