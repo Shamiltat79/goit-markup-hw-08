@@ -10,7 +10,7 @@
     @media  (min-width: 480px) {
      width: 100%; 
     }
-    @media (min-width: 480px),
+    @media (max-width: 768px),
         (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 2dppx),
@@ -57,12 +57,12 @@
     }
 }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero{
   min-width: 768px;
   max-width: 100%;
   background-image: url('..//..//images/Headertab.jpg');
-  @media (min-width: 768px),
+  @media screen and (min-width: 768px) and (max-width: 1199px),
    (min-device-pixel-ratio: 2),
    (-webkit-min-device-pixel-ratio: 2),
    (min-resolution: 2dppx),
@@ -71,18 +71,21 @@
   } 
 }
 }
+ @media (min-width: 1200px),
+ (min-device-pixel-ratio: 2),
+ (-webkit-min-device-pixel-ratio: 2),
+ (min-resolution: 2dppx),
+ (min-resolution: 192dpi) {
+  .hero{
+   background-image: url('../../images/Header@2x.jpg');
+ }
+ }
 @media (min-width: 1200px) {
   .hero {
     width: 1600px;
     height: 600px;
     background-image: url('../../images/Img.jpg');
-    @media (min-width: 1200px), 
-    (min-device-pixel-ratio: 2), 
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 2dppx), 
-    (min-resolution: 192dpi) {
-    background-image: url('../../images/Header@2x.jpg');
-    }
+   
   }
   
 }
