@@ -1,7 +1,7 @@
 .hero {
     min-height: 400px;
     margin: 0 auto;
-    background-image: url('../../images/headermob.jpg');
+    background-image: url('../images/headermob.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -15,7 +15,7 @@
         screen and (-webkit-min-device-pixel-ratio: 2),
         screen and (min-resolution: 2dppx),
         screen and (min-resolution: 192dpi) {
-          background-image: url('../../images/headermob@2x.jpg');
+          background-image: url('../images/headermob@2x.jpg');
         }
    
     
@@ -61,13 +61,13 @@
   .hero{
   min-width: 768px;
   max-width: 100%;
-  background-image: url('../../images/Headertab.jpg');
+  background-image: url('../images/Headertab.jpg');
   @media screen and (min-width: 768px) and (max-width: 1199px),
   screen and (min-device-pixel-ratio: 2),
   screen and (-webkit-min-device-pixel-ratio: 2),
   screen and (min-resolution: 2dppx),
   screen and (min-resolution: 192dpi) {
-   background-image: url('../../images/Headertab@2.jpg'); 
+   background-image: url('../images/Headertab@2x.jpg'); 
   } 
 }
 }
@@ -77,14 +77,14 @@
  screen and (min-resolution: 2dppx),
  screen and (min-resolution: 192dpi) {
   .hero{
-   background-image: url('../../images/Header@2x.jpg');
+   background-image: url('../images/Header@2x.jpg');
  }
  }
 @media screen and (min-width: 1200px) {
   .hero {
    max-width: 1600px;
     height: 600px;
-    background-image: url('../../images/Img.jpg');
+    background-image: url('../images/Img.jpg');
    
   }
   
