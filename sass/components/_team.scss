@@ -2,7 +2,16 @@
     background-color: #f5f4fa;
     &__title {
         display: block;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
+        font-family: var(--font-family-primary);
+        font-size: 28px;
+        line-height: var(--primary-line-height);
+        letter-spacing: 0.03em;
+        @media (min-width: 1200px){
+            margin-bottom: 80px;
+            font-size: 36px;
+        }
+
     }
 
 }
@@ -12,6 +21,7 @@
     margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
+    margin-top: 30px;
     
     @media screen and (min-width:480px){
      max-width: 480px;   

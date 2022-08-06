@@ -12,6 +12,8 @@
     margin: 0 auto;
     background-color: #2f303a;
     @include for-tablet-up {
+        display: flex;
+        flex-wrap: wrap;
         max-width: 768px; 
      }
     @include for-desktop-up {
@@ -154,8 +156,12 @@ display: flex;
 justify-content: center;
 width: 100%;    
 padding-top: 14px;
+@include for-tablet-up {
+padding-top: 0;
+}
 @include for-desktop-up {
 display: block;
 padding-top: 14px;
+width: auto;
 }
 }

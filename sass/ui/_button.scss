@@ -9,9 +9,10 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
+    letter-spacing: 0.06em;
     cursor: pointer;
     text-align: center;
-    max-width: 200px;
+    width: 200px;
     max-height: 50px;
     padding: 10px;
     &__icon {
@@ -87,7 +88,8 @@
     
     @include for-desktop-up {
         flex-wrap: nowrap;
-        justify-content: center;  
+        justify-content: center;
+        margin-top: 34px;  
         margin-bottom: 50px;
         min-width: 611px;
        }   
@@ -108,6 +110,12 @@ cursor: pointer;
 @media screen and (min-width: 768px){
 display: none;    
 }
+}
+.menu-close:hover,
+.menu-close:active,
+.menu-close:focus {
+fill: var(--color-accent);
+outline: none;
 }
 
 
